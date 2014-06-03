@@ -2075,6 +2075,8 @@ var requirejs, require, define;
     //Set up with config info.
     req(cfg);
 
+    // this hack is needed or window.require does not get set
+    // somehow meteor prevents this?
     global.require = require;
     global.define = define;
     global.requirejs = requirejs;
