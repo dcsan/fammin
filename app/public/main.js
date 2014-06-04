@@ -54,7 +54,7 @@ define(function(require, exports, module) {
     var mainContext = Engine.createContext();
 
     var container = new ContainerSurface({
-        size: [400, 400],
+        size: [undefined, undefined],
         properties: {
             overflow: 'hidden'
         }
